@@ -1,16 +1,18 @@
 <template>
-  <div>
-    <h2>hello World</h2>
-    <router-view/>
-  </div>
+     <div>
+        <home-header></home-header>
+    </div>
 </template>
 
 <script>
+import HomeHeader from './componets/header'
 export default{
-    name:'Home'
+    name: 'Home',
+    components: {
+    HomeHeader
+  }
 }
 </script>
-sss
-<style scoped>
 
+<style scoped>
 </style>
