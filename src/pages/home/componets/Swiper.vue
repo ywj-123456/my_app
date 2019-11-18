@@ -7,11 +7,16 @@
         <swiper-slide>
             <img class='swiper-img' src='http://mp-piao-admincp.qunarzz.com/mp_piao_admin_mp_piao_admin/admin/201911/1d8faa9f4d49b77ca1e61e2b478260f7.jpg_750x200_25cf76e2.jpg'/>
         </swiper-slide>
-        <swiper-slide>I'm Slide 3</swiper-slide>
-        <swiper-slide>I'm Slide 4</swiper-slide>
+        <swiper-slide>
+            <img class='swiper-img' src='http://mp-piao-admincp.qunarzz.com/mp_piao_admin_mp_piao_admin/admin/201910/e7eac5a5e99e6517c61b953c0fece63b.jpg_750x200_4b701cf8.jpg'/>
+        </swiper-slide>
+        <swiper-slide>
+            <img class='swiper-img' src="http://img1.qunarzz.com/piao/fusion/1706/b8/a8e8ff02b094c802.jpg_750x200_ddaec8e5.jpg"/>
+        </swiper-slide>
         <!-- optional controls -->
         <div class="swiper-pagination" slot="pagination"></div>
     </swiper>
+
 </template>
 
 <script>
