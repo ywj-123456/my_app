@@ -89,6 +89,7 @@ export default {
 }
 </script>
 
+
 <style lang="stylus" scoped>
 @import '~styles/varibles.styl'
   .title
@@ -112,29 +113,29 @@ export default {
       position absolute
       top .36rem
       right 0.32rem
-    .wrapper
-      height 0
-      padding-bottom 40%
+  .wrapper
+    height 0
+    padding-bottom 40%
+    overflow hidden
+    width 100%
+    .hot-img
       overflow hidden
-      width 100%
-      .hot-img
-        overflow hidden
-        height 24%
-        margin-top -.2rem
-        .hot-img-content
-          margin .15rem
-          width 100%
-      .desc
-        text-align  center
-        font-size .24rem
-        margin-top .12rem
-        line-height .32rem
+      height 24%
+      margin-top -.2rem
+      .hot-img-content
+        margin .15rem
+        width 100%
+    .desc
+      text-align center
+      font-size .24rem
+      margin-top .12rem
+      line-height .32rem
+      color #212121
+      ellipsis()
+    .price
+      text-align center
+      color #ff8300
+      span
         color #212121
-        ellipsis()
-      .price
-        text-align center
-        color #ff3200
-        span 
-          color #212121
-          font-size .24rem  
+        font-size .24rem
 </style>
