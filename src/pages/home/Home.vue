@@ -4,6 +4,7 @@
         <home-swiper></home-swiper>
         <home-icons></home-icons>
         <home-hot></home-hot>
+        <home-wherego></home-wherego>
     </div>
 </template>
 
@@ -12,13 +13,15 @@ import HomeHeader from './componets/header'
 import HomeSwiper from './componets/Swiper'
 import HomeIcons from './componets/Icons'
 import HomeHot from './componets/Hot'
+import HomeWherego from './componets/Wherego'
 export default{
     name: 'Home',
     components: {
     HomeHeader,
     HomeSwiper,
     HomeIcons,
-    HomeHot
+    HomeHot,
+    HomeWherego
   }
 }
 </script>
