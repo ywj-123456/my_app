@@ -30,7 +30,7 @@ export default {
                 id:'001',
                 imgUrl:'http://img1.qunarzz.com/sight/p0/1607/7c/7cda8b6782dabd80b4.img.jpg_200x200_2039e660.jpg',
                 title:'上海迪士尼乐园',
-                star:'&#xe6b0;&#xe6b0;&#xe6b0;&#xe6b0;&#xe6b0;',
+                star:'&#xe663;&#xe663;&#xe663;&#xe663;&#xe663;',
                 comment:'277442条评论',
                 price:'394',
                 desc:'全球最大的迪士尼城堡'
@@ -38,7 +38,7 @@ export default {
                 id:'002',
                 imgUrl:'http://img1.qunarzz.com/tuan/team2/1507/2c/83e0e0e7ae082a.jpg_200x200_6d7378b2.jpg',
                 title:'东方明珠',
-                star:'&#xe6b0;&#xe6b0;&#xe6b0;&#xe6b0;&#xe6b0;',
+                star:'&#xe663;&#xe663;&#xe663;&#xe663;&#xe663;',
                 comment:'87877条评论',
                 price:'80',
                 desc:'259米透明悬空观光廊了解一下~'
@@ -46,7 +46,7 @@ export default {
                 id:'003',
                 imgUrl:'http://img1.qunarzz.com/sight/p0/1906/19/19b7939928a0200da3.img.jpg_200x200_6879c7f7.jpg',
                 title:'上海海昌海洋公园',
-                star:'&#xe6b0;&#xe6b0;&#xe6b0;&#xe6b0;&#xe6b0;',
+                star:'&#xe663;&#xe663;&#xe663;&#xe663;&#xe663;',
                 comment:'25826条评论',
                 price:'139',
                 desc:'全球最大迪士尼城堡'
@@ -54,7 +54,7 @@ export default {
                 id:'004',
                 imgUrl:'http://img1.qunarzz.com/sight/p0/1607/7c/7cda8b6782dabd80b4.img.jpg_200x200_2039e660.jpg',
                 title:'上海迪士尼乐园',
-                star:'&#xe6b0;&#xe6b0;&#xe6b0;&#xe6b0;&#xe6b0;',
+                star:'&#xe663;&#xe663;&#xe663;&#xe663;&#xe663;',
                 comment:'277442条评论',
                 price:'394',
                 desc:'全球最大的迪士尼城堡'
@@ -62,7 +62,7 @@ export default {
                 id:'005',
                 imgUrl:'http://img1.qunarzz.com/tuan/team2/1507/2c/83e0e0e7ae082a.jpg_200x200_6d7378b2.jpg',
                 title:'东方明珠',
-                star:'&#xe6b0;&#xe6b0;&#xe6b0;&#xe6b0;&#xe6b0;',
+                star:'&#xe663;&#xe663;&#xe663;&#xe663;&#xe663;',
                 comment:'87877条评论',
                 price:'80',
                 desc:'259米透明悬空观光廊了解一下！'
@@ -70,7 +70,7 @@ export default {
                 id:'006',
                 imgUrl:'http://img1.qunarzz.com/sight/p0/1906/19/19b7939928a0200da3.img.jpg_200x200_6879c7f7.jpg',
                 title:'上海海昌海洋公园',
-                star:'&#xe6b0;&#xe6b0;&#xe6b0;&#xe6b0;&#xe6b0;',
+                star:'&#xe663;&#xe663;&#xe663;&#xe663;&#xe663;',
                 comment:'25826条评论',
                 price:'139',
                 desc:'全球最大的迪士尼城堡'
@@ -88,51 +88,51 @@ export default {
     .title-img
       width .3rem
       height .3rem
-      margin-top -0.9rem
+      margin-top -.09rem
     .title-content
-      margin-left .08rem
-      height .44rem
-      color red
-      font-size .32rem
-      line-height .44rem
-    .item
-      overflow hidden
-      display flex
-      height 1.9rem
-      padding-bottom 1rem
-      border-bottom 1px solid #ccc
-      .item-img
-        width 2rem
-        height 2rem
-        padding .2rem
-      .item-info
-        flex 1
-        paddign .1rem
-        margin-top .3rem
-        min-widht 0
-        .item-title
-          height .44rem
-          color #212121
-          font-size .32rem
-          line-height .44rem
-          margin-bottom .1rem
-        .iconfont
+      margin-left: .08rem
+      height: .44rem
+      color: red
+      font-size: .32rem
+      line-height: .44rem
+  .item
+    overflow: hidden
+    display: flex
+    height: 1.9rem
+    padding-bottom 1rem
+    border-bottom 1px solid #ccc
+    .item-img
+      width: 2rem
+      height: 2rem
+      padding: .2rem
+    .item-info
+      flex 1
+      padding: .1rem
+      margin-top .3rem
+      min-width: 0
+      .item-title
+        height: .44rem
+        color: #212121
+        font-size: .32rem
+        line-height: .44rem
+        margin-bottom .1rem
+      .iconfont
           color #ffb436
           font-size .25rem
-        .item-comment
-          color #212121
-          margin-left .2rem
-        .item-price
-          font-size .4rem
-          color #ffb436
-          margin-top .2rem
-          em
-            font-size .25rem
-          span 
-            color #616161
-            font-size .25rem
-        .item-desc
-          marign-top .6rem
-          color #f55
-          font-size .24rem
+      .item-comment
+            color #212121
+            margin-left .2rem
+      .item-price
+        font-size: .4rem
+        color #ffb436
+        margin-top .2rem
+        em
+          font-size: .25rem
+        span
+          color #616161
+          font-size: .25rem
+      .item-desc
+        margin-top .6rem
+        color #f55
+        font-size .24rem
 </style>
