@@ -72,8 +72,10 @@ export default {
        margin-top .2rem
        .item-title
          font-size .28rem
+         ellipsis()
        .item-desc
           color #999
           font-size .20rem
           margin-top .1rem
+          ellipsis()
 </style>
