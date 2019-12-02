@@ -5,10 +5,10 @@
         </div>
         <ul>
             <li class="item" v-for='item of WheregoList' :key='item.id'>
-                <img :src="item.imgUrl" alt="">
+                <img :src="item.imgUrl" alt="" class="item-img">
                 <div class="item-info">
-                    <p class="item.title">{{item.title}}</p>
-                    <p class="item.desc">{{item.desc}}</p>
+                    <p class="item-title">{{item.title}}</p>
+                    <p class="item-desc">{{item.desc}}</p>
                 </div>
             </li>
         </ul>
@@ -50,3 +50,30 @@ export default {
     }
 }
 </script>
+
+<style lang="stylus" scoped>
+@import '~styles/varibles.styl';
+  .title
+    margin-top .1rem
+    background #eee
+    padding .2rem
+   .title-content
+     margin-left: .08rem
+     height: .44rem
+     color: black
+     font-size: .30rem
+     line-height: .44rem
+  .item
+    padding-bottom .3rem
+    .item-img
+      width 100%
+     .item-info
+       margin-left .2rem
+       margin-top .2rem
+       .item-title
+         font-size .28rem
+       .item-desc
+          color #999
+          font-size .20rem
+          margin-top .1rem
+</style>
