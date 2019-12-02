@@ -96,45 +96,45 @@ export default {
     padding .2rem
     padding-bottom -.1rem
     .title-left
-      font-size .32rem
+      font-size .32rem;
       line-height .44rem
     .title-img
-      display inline-block
-      overflow hidden
-      width .3rem
-      hegiht .3rem
-      vertical-align top
+      display: inline-block;
+      overflow: hidden;
+      width: .3rem;
+      height: .3rem;
+      vertical-align: top;
     .title-right
       float right
-      color  #616161
-      font-size .24rem
-      line-height .28rem
-      position absolute
-      top .36rem
-      right 0.32rem
-    .wrapper
-      height 0
-      padding-bottom 40%
+      color: #616161;
+      font-size: .24rem;
+      line-height: .28rem;
+      position: absolute;
+      top: .36rem;
+      right: .32rem;
+  .wrapper
+    height 0
+    padding-bottom 40%
+    overflow hidden
+    width: 100%
+    .hot-img
       overflow hidden
-      width 100%
-      .hot-img
-        overflow hidden
-        height 24%
-        margin-top -.2rem
-        .hot-img-content
-          margin .15rem
-          width 100%
-      .desc
-        text-align  center
-        font-size .24rem
-        margin-top .12rem
-        line-height .32rem
+      height 24%
+      margin-top -.2rem
+      .hot-img-content
+        margin .15rem
+        width: 100%
+    .desc
+      text-align center
+      font-size .24rem
+      margin-top .12rem
+      line-height: .32rem
+      color #212121
+      ellipsis()
+    .price
+      text-align center
+      color #ff8300
+      span
         color #212121
-        ellipsis()
-      .price
-        text-align center
-        color #ff3200
-        span 
-          color #212121
-          font-size .24rem  
+        font-size .24rem
 </style>
