@@ -4,7 +4,7 @@
         <home-swiper :list='swiperList'></home-swiper>
         <home-icons :list='iconList'></home-icons>
         <home-hot :list='hotList'></home-hot>
-        <home-liked :list='likedList'></home-liked>
+        <home-liked :list='likeList'></home-liked>
         <home-wherego :list='wheregoList'></home-wherego>
     </div>
 </template>
@@ -39,7 +39,7 @@ export default{
   },
   methods:{
     getHomeInfo(){
-      axios.get('./api/index.json').then(this.getHomeInfoSUcc)
+      axios.get('/api/index.json').then(this.getHomeInfoSucc)
     },
     getHomeInfoSucc(res){
       res=res.data
