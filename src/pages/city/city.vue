@@ -1,12 +1,18 @@
 <template>
     <div>
         <city-header></city-header>
-        <city-search></city-search>
+        <!--往search组件里传递cities数据-->
+        <city-search :cities='cities'></city-search>
+        <!--axios获取的json数据cities，hotCities传递给List局部组件-->
+        <!--将letter参数在传递给List局部组件-->
         <city-list :cities='cities' 
                    :hot='hotCities'
                    :letter='letter'></city-list>
+        <!--axios获取的json数据cities传递给alphabet局部组件-->
         <city-alphabet :cities='cities'
-        @change='handleLetterChange'></city-alphabet>
+        @change='handleLetterChange'>
+        <!--监听Alphabet组件里的change时间-->
+        </city-alphabet>
     </div>
 </template>
 
