@@ -1,18 +1,21 @@
 <template>
     <div class="header">
         <div class="header-left">
-           
              <span class="iconfont arrow-icon">&#xe609;</span>
         </div>
         <div class="header-input">
               <span class="iconfont">&#xe613;</span>
                  输入城市/景点/游玩主题
         </div>
+        <!--使用router-link标签包裹header-right标签并制定路由跳转到'/city'-->
         <router-link to='/city'>
-        <div class="header-right">
-            {{this.city}}
-             <span class="iconfont arrow-icon">&#xe60c;</span>
-        </div>
+            <div class="header-right">
+                <!-- {{this.city}} -->
+                <!--使用vuex中的state里公用数据-->
+                {{this.$store.state.city}}
+                <!--传入城市的名称-->
+                 <span class="iconfont arrow-icon">&#xe60c;</span>
+            </div>
         </router-link>
      </div>
 </template>
@@ -20,9 +23,10 @@
 <script>
 export default {
     name: 'HomeHeader',
-    props: {
-      city: ""
-    }
+    //使用vuex后就不在需要外部传递的city
+    //props: {
+    //  city: ""
+    //}
 }
 </script>
 

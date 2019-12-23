@@ -1,6 +1,10 @@
 <template>
      <div>
-        <home-header :city='city'></home-header>
+       <!--通过绑定city属性来传值-->
+       <!--使用vuex之后就不需要从外部来传递数据了-->
+        <!-- <home-header :city='city'></home-header> -->
+        <home-header></home-header>
+        <!--绑定list来传递swiperList数据-->
         <home-swiper :list='swiperList'></home-swiper>
         <home-icons :list='iconList'></home-icons>
         <home-hot :list='hotList'></home-hot>
@@ -17,6 +21,7 @@ import HomeHot from './componets/Hot'
 import HomeLiked from './componets/Liked'
 import HomeWherego from './componets/Wherego'
 import axios from 'axios'
+//引入axios
 export default{
     name: 'Home',
     components: {
@@ -29,7 +34,8 @@ export default{
   },
   data(){
     return{
-      city:'',
+      //使用vuex后不再需要city
+      //city:'',
       swiperList:[],
       iconList:[],
       hotList:[],
@@ -37,24 +43,36 @@ export default{
       wheregoList:[]
     }
   },
+  //在mehods中定义函数getHomeInfo()
   methods:{
     getHomeInfo(){
+      //getHomeInfo中使用axios请求index.json的数据，然后执行getHomeInfoSucc函数
       axios.get('/api/index.json').then(this.getHomeInfoSucc)
+      //static目录下的文件可以在地址栏上直接访问，src目录下文件不能直接访问，
+      //但是从上线和安全角度烤炉我们需要使用代理转发机制将真实的访问目录隐藏替换成api
+      //我们可以在config目录下的index.js文件里proxytable里实现这个功能
     },
     getHomeInfoSucc(res){
+      //统一获取页面模拟的数据
       res=res.data
       if(res.ret && res.data){
+        //判定res.ret返回是否真并且数据是否存在
         const data=res.data
-        this.city=data.city
+        //使用vuex后救护需要在传递city数据
+        //this.city=data.city
         this.swiperList=data.swiperList
         this.iconList=data.iconList
         this.hotList=data.hotList
         this.likeList=data.likeList
         this.wheregoList=data.wheregoList
       }
+      //console.log(res)
+      //getHomeInfoSucc会将获取成功的数据打印
     }
   },
+  //生命周期函数mounted
   mounted(){
+    //在生命周期中执行getHomeInfo函数
     this.getHomeInfo()
   }
 }
